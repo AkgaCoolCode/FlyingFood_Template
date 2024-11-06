@@ -16,6 +16,7 @@ public class FoodCannon : MonoBehaviour
 
     private void Shoot()
     {
-        Instantiate(food, ShootPoint.position, Random.rotation);
+        GameObject newFood = Instantiate(food, ShootPoint.position, Random.rotation);
+        newFood.GetComponent<Rigidbody>().velocity = ShootPoint.forward * foodSpeed;
     }
 }
