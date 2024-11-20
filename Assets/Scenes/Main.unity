@@ -25219,7 +25219,7 @@ Transform:
   - {fileID: 1655004064}
   - {fileID: 1599940025}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1415824024
 MonoBehaviour:
@@ -28996,17 +28996,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6927329870635290252, guid: d6421dedb513843dc99104c59c553a9a, type: 3}
+      propertyPath: hitEffect
+      value: 
+      objectReference: {fileID: 8557867537291236502, guid: 854c588999d9c5a488c878bd2dba42b9, type: 3}
+    - target: {fileID: 6927329870635290252, guid: d6421dedb513843dc99104c59c553a9a, type: 3}
+      propertyPath: apearEffect
+      value: 
+      objectReference: {fileID: 5688621020241137862, guid: 3036444d2c1101c4e958738d02bf12bd, type: 3}
+    - target: {fileID: 6927329870635290252, guid: d6421dedb513843dc99104c59c553a9a, type: 3}
+      propertyPath: spawnPointHolder
+      value: 
+      objectReference: {fileID: 1776635732}
     - target: {fileID: 7673344880641715131, guid: d6421dedb513843dc99104c59c553a9a, type: 3}
       propertyPath: m_Name
-      value: Plate
+      value: Plate white
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7673344880641715131, guid: d6421dedb513843dc99104c59c553a9a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1851110698}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6421dedb513843dc99104c59c553a9a, type: 3}
 --- !u!1001 &1608499189
 PrefabInstance:
@@ -32546,7 +32555,7 @@ Transform:
   - {fileID: 228930986}
   - {fileID: 1610649824}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1777925640
 PrefabInstance:
@@ -33768,28 +33777,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6658866c1c65a4aa4a6c6e8e34e4f5, type: 3}
---- !u!1 &1851110693 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7673344880641715131, guid: d6421dedb513843dc99104c59c553a9a, type: 3}
-  m_PrefabInstance: {fileID: 1602070442}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1851110694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4676594329466233868, guid: d6421dedb513843dc99104c59c553a9a, type: 3}
   m_PrefabInstance: {fileID: 1602070442}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1851110698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851110693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b9c0f2daae875428158b804f73c700, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1851282266
 PrefabInstance:
   m_ObjectHideFlags: 0
