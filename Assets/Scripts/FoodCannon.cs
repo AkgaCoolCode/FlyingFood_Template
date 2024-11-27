@@ -1,10 +1,14 @@
+using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class FoodCannon : MonoBehaviour
 {
     [SerializeField] private float foodSpeed = 30;
-    [SerializeField] private GameObject food;
     [SerializeField] private Transform ShootPoint;
+    [SerializeField] private List<GameObject> foodList;
+    [SerializeField] private GameObject shootEffect; 
+
 
     private void Update()
     {
@@ -16,7 +20,9 @@ public class FoodCannon : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject newFood = Instantiate(food, ShootPoint.position, Random.rotation);
+        Instantiate(shootEffect, ShootPoint.position, Quaternion.identity);
+        GameObject randomFood = foodList[Random.Range(0, foodList.Count)];
+        GameObject newFood = Instantiate(randomFood, ShootPoint.position, Random.rotation);
         newFood.GetComponent<Rigidbody>().velocity = ShootPoint.forward * foodSpeed;
     }
 }
