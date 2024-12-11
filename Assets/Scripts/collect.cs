@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class collect : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+  
+    private void OnTriggerEnter(Collider other)
     {
-        print("collectable");
-        if (collision.transform.CompareTag("Player"))
+        if (other.transform.CompareTag("Player"))
         {
-          
+            print("collectable");
+            Destroy(gameObject); 
         }
+
+
     }
 }

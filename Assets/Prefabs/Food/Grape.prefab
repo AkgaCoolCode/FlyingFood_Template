@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9180613723052890985}
   - component: {fileID: 4045269900615001173}
   - component: {fileID: 7234490078805213137}
+  - component: {fileID: 8823672531436104710}
   m_Layer: 0
   m_Name: Grape
   m_TagString: Untagged
@@ -135,6 +136,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 7b5ec5c57af98c349b22ae545a4a9fcd, type: 3}
+--- !u!114 &8823672531436104710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8644186211642251195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ade919f201f66364ab2fc535f43bd336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7090221918255950617
 PrefabInstance:
   m_ObjectHideFlags: 0

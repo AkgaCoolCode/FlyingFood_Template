@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using TMPro;
+
 
 public class FoodCannon : MonoBehaviour
 {
@@ -9,12 +9,9 @@ public class FoodCannon : MonoBehaviour
     [SerializeField] private Transform ShootPoint;
     [SerializeField] private List<GameObject> foodList;
     [SerializeField] private GameObject shootEffect;
-    [SerializeField] private TMP_Text scoretext;
+    
 
-    private void Start()
-    {
-        scoretext.text = "Hallo";
-    }
+   
 
     private void Update()
     {
