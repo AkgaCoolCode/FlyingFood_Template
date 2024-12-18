@@ -10,7 +10,9 @@ public class collect : MonoBehaviour
         if (other.transform.CompareTag("Player"))
         {
             print("collectable");
+            scoreManager.instance.ChangeScore(5);
             Destroy(gameObject); 
+
         }
 
 

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7914189248106135059}
   - component: {fileID: 897052810469763812}
   - component: {fileID: 181266495826857560}
-  - component: {fileID: 5014316336280458182}
   - component: {fileID: 1124466128070679680}
   m_Layer: 0
   m_Name: Donut
@@ -109,33 +108,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 4526a86407f95894b9d00e13d5ebfc70, type: 3}
---- !u!54 &5014316336280458182
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67473434673981706}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!114 &1124466128070679680
 MonoBehaviour:
   m_ObjectHideFlags: 0

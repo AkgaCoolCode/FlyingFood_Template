@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3930177330865672460}
   - component: {fileID: 6572112164037323514}
   - component: {fileID: 5657785695035468847}
-  - component: {fileID: -6155043648194008781}
   - component: {fileID: -173479151906542391}
   m_Layer: 0
   m_Name: Salad
@@ -109,33 +108,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: aaf2164196f8d85479afb58cca7fbeb1, type: 3}
---- !u!54 &-6155043648194008781
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5979760642171127233}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!114 &-173479151906542391
 MonoBehaviour:
   m_ObjectHideFlags: 0

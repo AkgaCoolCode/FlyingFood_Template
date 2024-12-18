@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5924670946302874141}
   - component: {fileID: 5863938602398702185}
   - component: {fileID: 7454309621079016142}
-  - component: {fileID: 5176364433981453085}
   - component: {fileID: 8782108115737017079}
   m_Layer: 0
   m_Name: Watermelon
@@ -109,33 +108,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d9b493bbd86ef3443a770a279d0426a9, type: 3}
---- !u!54 &5176364433981453085
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598188892439967540}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!114 &8782108115737017079
 MonoBehaviour:
   m_ObjectHideFlags: 0

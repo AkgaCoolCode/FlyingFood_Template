@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4013200324003350804}
   - component: {fileID: 7860169946749052468}
   - component: {fileID: 654088046489595943}
-  - component: {fileID: -5793259606100653452}
   - component: {fileID: 8064695903209801429}
   m_Layer: 0
   m_Name: Cheese
@@ -109,33 +108,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a65bc41f54f5afb478ec22c22d371692, type: 3}
---- !u!54 &-5793259606100653452
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8940809897678416834}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!114 &8064695903209801429
 MonoBehaviour:
   m_ObjectHideFlags: 0

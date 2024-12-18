@@ -5,11 +5,13 @@ using TMPro;
 
 public class scoreManager : MonoBehaviour
 {
+    public static scoreManager instance;
     [SerializeField] private TMP_Text scoretext;
     private int score;
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         scoretext.text = "Score: 0";
     }
 
@@ -21,5 +23,6 @@ public class scoreManager : MonoBehaviour
     public void ChangeScore(int amount)
     {
         score += amount;
+        scoretext.text = $"Score: {score}";
     }
 }
