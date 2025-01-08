@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class timer : MonoBehaviour
 {
+    public static timer instance;
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private int startTime;
     private int timeLeft;
@@ -13,6 +14,7 @@ public class timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;    
         timerText.text = $"Time: {startTime}";
         timeLeft = startTime;
         InvokeRepeating("TimeCount", 1, 1);
@@ -28,9 +30,19 @@ public class timer : MonoBehaviour
     {
         timeLeft--;
         timerText.text = $"Time: {timeLeft}";
-        if (timeLeft < 0) 
+        if (timeLeft == 0) 
         { 
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
     }
+
+    public void ResetTimer()
+    {
+        timeLeft = startTime;
+        timerText.text = $"Time: {timeLeft}";
+    }
+
+
+
 }

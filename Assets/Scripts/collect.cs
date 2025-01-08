@@ -11,6 +11,7 @@ public class collect : MonoBehaviour
         {
             print("collectable");
             scoreManager.instance.ChangeScore(5);
+            timer.instance.ResetTimer();
             Destroy(gameObject); 
 
         }
