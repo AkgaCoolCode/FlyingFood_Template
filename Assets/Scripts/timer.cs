@@ -10,13 +10,17 @@ public class timer : MonoBehaviour
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private int startTime;
     private int timeLeft;
+    private int livesLeft;
+    [SerializeField] private TMP_Text livesText;
 
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;    
+        instance = this;
         timerText.text = $"Time: {startTime}";
         timeLeft = startTime;
+        livesLeft = 3;
+        livesText.text = $"Lives: {livesLeft}";
         InvokeRepeating("TimeCount", 1, 1);
     }
 
@@ -26,13 +30,22 @@ public class timer : MonoBehaviour
         
     }
 
+
     private void TimeCount()
     {
         timeLeft--;
         timerText.text = $"Time: {timeLeft}";
         if (timeLeft == 0) 
         { 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (livesLeft != 0)
+            {
+                livesLeft --;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else
+            {
+                //change scene to end screen
+            }
         }
 
     }
