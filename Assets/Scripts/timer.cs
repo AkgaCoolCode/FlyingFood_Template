@@ -12,6 +12,8 @@ public class timer : MonoBehaviour
     private int timeLeft;
     private int livesLeft;
     [SerializeField] private TMP_Text livesText;
+    [SerializeField] private Transform startingPosition;
+    [SerializeField] private Rigidbody PlayerRB;
 
     // Start is called before the first frame update
     void Start()
@@ -35,16 +37,18 @@ public class timer : MonoBehaviour
     {
         timeLeft--;
         timerText.text = $"Time: {timeLeft}";
-        if (timeLeft == 0) 
+        if (timeLeft < 1) 
         { 
             if (livesLeft != 0)
             {
                 livesLeft --;
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                ResetTimer();
+                livesText.text = $"Lives: {livesLeft}";
+                PlayerRB.position = startingPosition.position;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
             }
             else
             {
-                //change scene to end screen
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 
