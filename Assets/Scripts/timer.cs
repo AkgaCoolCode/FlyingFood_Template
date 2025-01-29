@@ -39,7 +39,7 @@ public class timer : MonoBehaviour
         timerText.text = $"Time: {timeLeft}";
         if (timeLeft < 1) 
         { 
-            if (livesLeft != 0)
+            if (livesLeft  > 1)
             {
                 livesLeft --;
                 ResetTimer();
