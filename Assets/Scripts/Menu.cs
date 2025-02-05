@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    [SerializeField] private int sceneNumber;
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
@@ -16,7 +17,10 @@ public class Menu : MonoBehaviour
         Application.Quit();
     }
 
-
+    public void StartScene()
+    {
+        SceneManager.LoadScene(sceneNumber);
+    }
 
 
 
